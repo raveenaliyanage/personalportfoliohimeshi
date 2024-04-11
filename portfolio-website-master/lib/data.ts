@@ -5,6 +5,9 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import himeshiImg from "@/public/himeshi.jpg";
+import portfolioImg from "@/public/portfolio.jpg";
+import movieImg from "@/public/movieapp.jpg";
 
 export const links = [
   {
@@ -33,7 +36,7 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+/*export const experiencesData = [
   {
     title: "Graduated bootcamp",
     location: "Miami, FL",
@@ -58,30 +61,33 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: "2021 - present",
   },
-] as const;
+] as const;*/
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Movie Ticket Booking App",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Created with an educational purpose and through this mobile app there is a possibility to book movie details and movie tickets.",
+    tags: ["React Native", "TypeScript", "FireBase"],
+    imageUrl: movieImg,
+    githubLink:"https://github.com/raveenaliyanage/SampleMovieApp",
+  
   },
   {
-    title: "rmtDev",
+    title: "Personal Portfolio",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Designed as a website that includes personal data and will be updated according to changing personal information.",
+    tags: ["React", "Next.js", "TypeScript","Tailwind CSS", "Framer Motion"],
+    imageUrl: portfolioImg,
+    githubLink:"https://github.com/raveenaliyanage/personalportfoliohimeshi/tree/main/portfolio-website-master",
   },
-  {
-    title: "Word Analytics",
+  
+    /*title: "Word Analytics",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
-  },
+  },*/
 ] as const;
 
 export const skillsData = [
@@ -90,18 +96,13 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
+  "React Native",
   "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
   "Python",
-  "Django",
   "Framer Motion",
 ] as const;

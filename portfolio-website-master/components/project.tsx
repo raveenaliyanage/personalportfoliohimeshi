@@ -4,6 +4,9 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link"
+import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +15,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  githubLink,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -46,12 +50,37 @@ export default function Project({
               </li>
             ))}
           </ul>
+
+          {githubLink && (
+            <div className="flex mt-4">
+              <BsGithub className="text-gray-600 mr-2" />
+              <a
+                href={githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400"
+              >
+                GitHub Repository
+              </a>
+            </div>
+          )}
+
+
+
+
+
+
+
         </div>
 
         <Image
           src={imageUrl}
+          //src="/himeshi.jpg"
           alt="Project I worked on"
+          width="192"
+          height="192"
           quality={95}
+          
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]

@@ -1,4 +1,4 @@
-"use client";
+/*"use client";
 
 import React from "react";
 import SectionHeading from "./section-heading";
@@ -55,4 +55,4 @@ export default function Experience() {
       </VerticalTimeline>
     </section>
   );
-}
+}*/
