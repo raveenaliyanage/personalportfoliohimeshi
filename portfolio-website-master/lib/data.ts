@@ -8,6 +8,7 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 import himeshiImg from "@/public/himeshi.jpg";
 import portfolioImg from "@/public/portfolio.jpg";
 import movieImg from "@/public/movieapp.jpg";
+import mellyImg from "@/public/melly.jpg";
 
 export const links = [
   {
@@ -81,13 +82,15 @@ export const projectsData = [
     imageUrl: portfolioImg,
     githubLink:"https://github.com/raveenaliyanage/personalportfoliohimeshi/tree/main/portfolio-website-master",
   },
+  {
   
-    /*title: "Word Analytics",
+    title: "Melly Fashion",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-  },*/
+      "A public web app for an E-commerce website.",
+    tags: ["React", "Next.js", "Node.js", "MongoDB"],
+    imageUrl: mellyImg,
+    githubLink:"https://github.com/raveenaliyanage/MELLY-FASHION",
+  },
 ] as const;
 
 export const skillsData = [
